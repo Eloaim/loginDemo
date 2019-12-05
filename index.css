@@ -6,25 +6,47 @@ body {
     padding: 0;
 }
 
-.container {
+.login-box {
     display: flex;
     justify-content: center;
 
 }
 
-.content {
+.login-box a {
+    display: inline-block;
+    color: #4a4744;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 18px;
+}
+
+.login-box a:hover {
+    color: #ff7d0a;
+}
+
+.logon-box a:active {
+    color: #ee7204;
+}
+
+.login-box span {
+    display: flex;
+    padding-top: 5px;
+}
+
+.login-left {
     background-color: rgba(255, 255, 255, 0.95);
     width: 360px;
     height: 500px;
     color: rgb(196, 196, 210);
     padding: 10px;
-    margin-top: 7%;
+    margin-top: 106px;
     box-shadow: 0px 12px 8px -12px #000;
     border-radius: 10px;
 
 }
 
 .login-header {
+    display: flex;
     width: 100%;
     height: 48px;
     margin-bottom: 20px;
@@ -54,9 +76,9 @@ body {
     width: 198px;
     height: 32px;
     border: 1px solid rgb(196, 196, 210);
-    ;
-    border-radius: 4px;
     padding-left: 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
     color: rgb(174, 174, 194);
 }
 
@@ -79,15 +101,17 @@ body {
     color: rgb(196, 196, 210);
 }
 
-.remember-box a {
+.login-left a {
     border-bottom: 1px solid rgb(196, 196, 210);
+    margin-top: 30px;
+    font-size: 12px;
 }
 
-.remember-box a:hover {
+.login-left a:hover {
     color: rgb(154, 179, 244);
 }
 
-.remember-box a:active {
+.login-left a:active {
     color: rgb(154, 179, 244);
 }
 
@@ -119,7 +143,7 @@ body {
 }
 
 
-.login-box {
+.login-left-content {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
@@ -127,24 +151,8 @@ body {
     font-size: 0.85em;
 }
 
-.login-box a {
-    margin: 30px;
-    color: #4a4744;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.login-box a:hover {
-    color: #ff7d0a;
-}
-
-.logon-box a:active {
-    color: #ee7204;
-}
-
-.login-box span {
-    display: flex;
-    padding-top: 5px;
+.login-left-content p {
+    margin: 0;
 }
 
 
@@ -152,7 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to left, rgb(46, 88, 224), rgb(51, 97, 237));
-    margin-top: 7%;
+    margin-top: 106px;
     width: 500px;
     align-items: center;
     justify-content: center;
@@ -167,14 +175,18 @@ body {
     color: white;
 }
 
+.login-right-title p {
+    margin: 0;
+}
+
 .login-right-content {
     display: flex;
     flex-direction: column;
+    width: 156px;
     color: rgb(154, 179, 244);
 }
 
-.login-right-content text {
-    width: 220px;
+.login-right-content p {
     padding-top: 20px;
 }
 
