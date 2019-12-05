@@ -1,165 +1,174 @@
-html,
-body 
-    font-family: "Times New Roman", Georgia, Serif
-    background-color: rgb(245, 245, 252)
-    margin: 0
-    padding: 0
+html, body {
+    font-family: 'Times New Roman', Georgia, Serif;
+    background-color: rgb(245, 245, 252);
+    margin: 0;
+    padding: 0;
+}
 
-.login-box 
-    display flex
-    justify-content center
-    a 
-        display inline-block
-        color #4a4744
-        font-size 13px
-        text-decoration none
-        margin-top 18px
+.login-box {
+    display: flex;
+    justify-content: center;
 
-    a:hover 
-        color: #ff7d0a
-    a:active 
-        color: #ee7204
-    span 
-        display: flex
-        padding-top: 5px
+    span {
+        display: flex;
+        padding-top: 5px;
+    }
+}
 
+.login-left {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 360px;
+    height: 500px;
+    color: rgb(196, 196, 210);
+    padding: 10px;
+    margin-top: 106px;
+    box-shadow: 0px 12px 8px -12px #000;
+    border-radius: 10px;
 
-.login-left 
-    background-color: rgba(255, 255, 255, 0.95)
-    width: 360px
-    height: 500px
-    color: rgb(196, 196, 210)
-    padding: 10px
-    margin-top: 106px
-    box-shadow: 0px 12px 8px -12px #000
-    border-radius: 10px
-    a 
-        border-bottom: 1px solid rgb(196, 196, 210)
-        margin-top: 18px
-        font-size: 13px
-    a:hover 
-        color: rgb(154, 179, 244)
-    a:active 
-        color: rgb(154, 179, 244)
-    
-.login-header 
-    display: flex
-    width: 100%
-    height: 48px
-    margin-bottom: 20px
+    a {
+        border-bottom: 1px solid rgb(196, 196, 210);
+        margin-top: 18px;
+        font-size: 13px;
+    }
 
+    a:hover {
+        color: rgb(154, 179, 244);
+    }
 
-.text-log-in 
-    font-size: 1.65em
-    padding-right: 12px
-    color: black
-    font-weight: bolder
+    a:active {
+        color: rgb(154, 179, 244);
+    }
+}
 
+.login-header {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+}
 
-.text-sign-up 
-    color: rgb(196, 196, 210)
+.text-log-in {
+    font-size: 1.65em;
+    padding-right: 12px;
+    color: black;
+    font-weight: bolder;
+}
 
+.text-sign-up {
+    color: rgb(196, 196, 210);
+}
 
-.login-input-box 
-    margin-top: 12px
-    width: 100%
-    margin-left: auto
-    margin-right: auto
-    display: inline-block
+.login-input-box {
+    margin-top: 12px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 
-    input 
-        width: 198px
-        height: 32px
-        border: 1px solid rgb(196, 196, 210)
-        padding-left: 10px
-        border-radius: 4px
-        margin-bottom: 12px
-        color: rgb(174, 174, 194)
-    input:hover 
-        border: 1px solid rgb(154, 179, 244)
-    input:after 
+    input {
+        width: 198px;
+        height: 32px;
+        border: 1px solid rgb(196, 196, 210);
+        padding-left: 10px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+        color: rgb(174, 174, 194);
+    }
+
+    input:hover {
         border: 1px solid rgb(154, 179, 244);
+    }
 
+    input:after {
+        border: 1px solid rgb(154, 179, 244);
+    }
+}
 
-.remember-box 
-    width: auto
-    height: auto
-    margin-top: 30px
-    font-size: 12px
-    color: rgb(196, 196, 210)
+.remember-box {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+    font-size: 12px;
+    color: rgb(196, 196, 210);
+}
 
+.login-button-box {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 
+    button {
+        background-color: rgb(34, 190, 135);
+        color: #ffffff;
+        font-size: 16px;
+        width: 155px;
+        height: 40px;
+        border: 1px solid rgb(34, 190, 135);
+        border-radius: 4px;
+    }
 
+    button:hover {
+        background-color: rgb(83, 223, 174);
+    }
 
-.login-button-box 
-    margin-top: 30px
-    width: 100%
-    margin-left: auto
-    margin-right: auto
-    display: inline-block
-    button 
-        background-color: rgb(34, 190, 135)
-        color: #ffffff
-        font-size: 16px
-        width: 155px
-        height: 40px
-        border: 1px solid rgb(34, 190, 135)
-        border-radius: 4px
-    button:hover 
-        background-color: rgb(83, 223, 174)
-    button:active 
-        background-color: rgb(83, 223, 174)
+    button:active {
+        background-color: rgb(83, 223, 174);
+    }
+}
 
+.login-left-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85em;
 
+    p {
+        margin: 0;
+    }
+}
 
-.login-left-content 
-    display: flex
-    flex-direction: column
-    margin-top: 20px
-    text-align: center
-    font-size: 0.85em
-    p 
-        margin: 0
+.login-right {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, rgb(46, 88, 224), rgb(51, 97, 237));
+    margin-top: 106px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 12px 8px -12px #000;
+    border-radius: 10px;
+}
 
+.login-right-title {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.85em;
+    color: white;
 
-.login-right 
-    display: flex
-    flex-direction: column
-    background: linear-gradient(to left, rgb(46, 88, 224), rgb(51, 97, 237))
-    margin-top: 106px
-    width: 500px
-    align-items: center
-    justify-content: center
-    box-shadow: 0px 12px 8px -12px #000
-    border-radius: 10px
+    p {
+        margin: 0;
+    }
+}
 
+.login-right-content {
+    display: flex;
+    flex-direction: column;
+    width: 156px;
+    color: rgb(154, 179, 244);
 
-.login-right-title 
-    display: flex
-    flex-direction: column
-    font-size: 1.85em
-    color: white
-    p 
-        margin: 0
+    p {
+        padding-top: 20px;
+    }
+}
 
+.info {
+    margin: 52px;
+}
 
-.login-right-content 
-    display: flex
-    flex-direction: column
-    width: 156px
-    color: rgb(154, 179, 244)
-    p 
-        padding-top: 20px
-
-
-.info 
-    margin: 52px
-
-
-.login-box-icon 
-    height: 20px
-    width: 20px
-
-
-
-
+.login-box-icon {
+    height: 20px;
+    width: 20px;
+}
